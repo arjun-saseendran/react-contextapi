@@ -27,9 +27,7 @@ value={password}
 onChange={(e) => setPassword(e.target.value)}
 placeholder='Password'
 	/>
-<button>
-onClick={handleSubmit}
-
+<button onClick={handleSubmit}>
 Submit
 </button>
 
