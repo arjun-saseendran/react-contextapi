@@ -1,9 +1,13 @@
-import React from 'react'
+import React, {useContext} from 'react'
+import UserContext from '../context/UserContext'
 
 const Profile = () => {
+	const {user} = useContext(UserContext)
+
+	if(!user) return <h1>Not Logged In</h1>
 	return(
 
-		<h1>Profile:  </h1>
+		<h1>Profile: {user} </h1>
 
 		)
 }
